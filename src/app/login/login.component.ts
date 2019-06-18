@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
   password = 'easyPassword';
   errorMessage = 'Invalid Credentials';
   invalidLogin = false;
-  // Dependency Injection
+
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -27,7 +27,6 @@ export class LoginComponent implements OnInit {
     } else {
       this.invalidLogin = true;
     }
-    console.log(this.invalidLogin);
   }
 
 }
